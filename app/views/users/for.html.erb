@@ -1,0 +1,18 @@
+<html>
+
+<body>
+		<header>
+			<h1>PAGE FORMULAIRE METHODE FORM FOR</h1>
+		</header>
+<secion>	        
+	  <%= form_for @user, url: {action: "new"}, html: {class: "nifty_form"} do |f| %>
+ username : <%= f.text_field :username %><br />
+ email : <%= f.text_field :email %><br />
+ bio : <%= f.text_area :bio %><br />
+ <%= f.submit %>
+<% end %>
+</section>
+
+</body>
+</html>
+
